@@ -40,7 +40,8 @@ function App() {
 
   const addItem = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
-      const name = e.currentTarget.value;
+      const name = e.currentTarget.value.trim();
+      if (!name) return;
       setTodos([...todos, { id: Date.now(), name: name, status: STATUS.OPEN }]);
       e.currentTarget.value = "";
     }
