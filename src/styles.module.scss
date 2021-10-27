@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+.TodoWrapper {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TodoApp {
+  padding: 10px 10px;
+  border: 1px solid gray;
+
+  .Header {
+    text-align: center;
+    color: #b83f45;
+    font-size: 80px;
+  }
+
+  .TodoList {
+    .ToDoItem {
+      display: flex;
+      justify-content: space-between;
+      input {
+        border-radius: 35px;
+      }
+    }
+  }
+}
+
+.Footer {
+  display: flex;
+  .Filter {
+    display: flex;
+  }
+}
+
+.LineThrough {
+  text-decoration: line-through;
+}
