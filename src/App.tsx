@@ -149,7 +149,12 @@ function App() {
         </section>
       </div>
 
-      <footer>Simple todo app - 2021/10/28</footer>
+      <footer>
+        <div>Simple todo app - 2021/10/28</div>
+        <div>
+          <a href="https://github.com/NDT36/react-todo">Github repo</a>
+        </div>
+      </footer>
     </div>
   );
 }
